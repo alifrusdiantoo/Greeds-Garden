@@ -24,6 +24,16 @@ window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
 
+[file_customization]
+
+folder_colors={
+"res://Tilesets/": "purple",
+"res://assets/": "orange",
+"res://globlas/": "red",
+"res://scenes/": "green",
+"res://scripts/": "yellow"
+}
+
 [input]
 
 walk_up={
@@ -55,6 +65,12 @@ hit={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(112, 22),"global_position":Vector2(121, 70),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="Ground"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Interactable"
 
 [rendering]
 
