@@ -1,21 +1,29 @@
-[gd_scene load_steps=8 format=3 uid="uid://kwbl40i4snqy"]
+[gd_scene load_steps=10 format=3 uid="uid://kwbl40i4snqy"]
 
 [ext_resource type="Texture2D" uid="uid://dtb668oy0glr0" path="res://assets/game/objects/basic_grass_biom_things.png" id="1_a8qts"]
+[ext_resource type="Shader" uid="uid://cpp2vomny562l" path="res://scenes/objects/trees/tree_shake.gdshader" id="1_w057i"]
 [ext_resource type="Script" uid="uid://cuwxjwawydtyo" path="res://scenes/objects/trees/small_tree.gd" id="2_g5iuu"]
 [ext_resource type="PackedScene" uid="uid://chp715cef8jhy" path="res://scenes/components/hurt_component.tscn" id="2_xyb6m"]
 [ext_resource type="PackedScene" uid="uid://b3clihe1tiky4" path="res://scenes/components/damage_component.tscn" id="3_au4vd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w057i"]
+resource_local_to_scene = true
+shader = ExtResource("1_w057i")
+shader_parameter/shake_intensity = 0.0
+shader_parameter/shake_speed = 20.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xyb6m"]
 atlas = ExtResource("1_a8qts")
 region = Rect2(0, 0, 16, 32)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_au4vd"]
-radius = 4.0
+radius = 3.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_au4vd"]
 size = Vector2(8, 22)
 
 [node name="SmallTree" type="Sprite2D"]
+material = SubResource("ShaderMaterial_w057i")
 texture = SubResource("AtlasTexture_xyb6m")
 script = ExtResource("2_g5iuu")
 
