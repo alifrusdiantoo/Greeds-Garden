@@ -20,11 +20,10 @@ region = Rect2(16, 0, 32, 32)
 radius = 4.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bqwkh"]
-size = Vector2(12, 22)
+size = Vector2(14, 22)
 
 [node name="BigTree" type="Sprite2D"]
 material = SubResource("ShaderMaterial_34cw3")
-position = Vector2(0, -12)
 texture = SubResource("AtlasTexture_4ljuj")
 script = ExtResource("2_3bljl")
 
