@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://dwdqtcoh16s7b" path="res://assets/game/characters/chicken_sprites.png" id="1_be5x3"]
 [ext_resource type="Script" uid="uid://cuic6h8yjf4rg" path="res://scenes/characters/chicken/chicken.gd" id="1_r6a33"]
 [ext_resource type="Script" uid="uid://cqh185el2r7dm" path="res://scripts/state_machine/node_state_machine.gd" id="2_awcwn"]
-[ext_resource type="Script" uid="uid://c85flksy8xlol" path="res://scenes/characters/chicken/idle_state.gd" id="3_31inw"]
-[ext_resource type="Script" uid="uid://dqm3hu0y6euhh" path="res://scenes/characters/chicken/walk_state.gd" id="4_31inw"]
+[ext_resource type="Script" uid="uid://c85flksy8xlol" path="res://scenes/characters/npc_states/idle_state.gd" id="3_31inw"]
+[ext_resource type="Script" uid="uid://dqm3hu0y6euhh" path="res://scenes/characters/npc_states/walk_state.gd" id="4_31inw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rsly8"]
 atlas = ExtResource("1_be5x3")
@@ -81,7 +81,6 @@ shape = SubResource("CircleShape2D_hv82h")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 avoidance_enabled = true
-radius = 5.0
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("2_awcwn")
