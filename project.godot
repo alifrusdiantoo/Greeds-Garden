@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 ToolManager="*res://globlas/tool_manager.gd"
+InventoryManager="*res://globlas/inventory_manager.gd"
 
 [display]
 
