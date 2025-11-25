@@ -16,8 +16,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-ToolManager="*res://globlas/tool_manager.gd"
-InventoryManager="*res://globlas/inventory_manager.gd"
+ToolManager="*res://scripts/globlas/tool_manager.gd"
+InventoryManager="*res://scripts/globlas/inventory_manager.gd"
+DayAndNightCycleManager="*res://scripts/globlas/day_and_night_cycle_manager.gd"
 
 [display]
 
@@ -33,9 +34,9 @@ window/stretch/scale_mode="integer"
 folder_colors={
 "res://Tilesets/": "purple",
 "res://assets/": "orange",
-"res://globlas/": "red",
 "res://scenes/": "green",
-"res://scripts/": "yellow"
+"res://scripts/": "yellow",
+"res://scripts/globlas/": "yellow"
 }
 
 [global_group]
