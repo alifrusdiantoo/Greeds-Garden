@@ -17,27 +17,29 @@ atlas = ExtResource("1_q7tvr")
 region = Rect2(16, 0, 32, 32)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5iodq"]
-radius = 4.0
+radius = 6.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bqwkh"]
 size = Vector2(14, 22)
 
 [node name="BigTree" type="Sprite2D"]
 material = SubResource("ShaderMaterial_34cw3")
+position = Vector2(0, -6)
 texture = SubResource("AtlasTexture_4ljuj")
+offset = Vector2(0, -6)
 script = ExtResource("2_3bljl")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, 11)
+position = Vector2(0, 4)
 shape = SubResource("CircleShape2D_5iodq")
 
 [node name="HurtComponent" parent="." instance=ExtResource("3_34cw3")]
 position = Vector2(13.8188, -0.464849)
 
 [node name="HurtComponentCollisionShape2D" type="CollisionShape2D" parent="HurtComponent"]
-position = Vector2(-13.8188, 3.46485)
+position = Vector2(-13.8188, -4.53515)
 shape = SubResource("RectangleShape2D_bqwkh")
 debug_color = Color(0.708025, 0.485336, 0.116112, 0.42)
 
