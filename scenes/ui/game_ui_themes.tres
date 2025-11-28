@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=38 format=3 uid="uid://yol06ecjaphm"]
+[gd_resource type="Theme" load_steps=41 format=3 uid="uid://yol06ecjaphm"]
 
 [ext_resource type="Texture2D" uid="uid://b507ehslw5icb" path="res://assets/ui/basic_ui_sprites.png" id="1_45njn"]
 [ext_resource type="FontVariation" uid="uid://bwcud0xx4iavt" path="res://assets/ui/fonts/zx_palm_variation.tres" id="2_635oi"]
@@ -85,15 +85,30 @@ texture_margin_bottom = 4.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7esym"]
 atlas = ExtResource("1_45njn")
-region = Rect2(504, 131, 35, 18)
+region = Rect2(107, 107, 26, 26)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vhain"]
 texture = SubResource("AtlasTexture_7esym")
-texture_margin_left = 2.0
-texture_margin_top = 2.0
-texture_margin_right = 2.0
-texture_margin_bottom = 3.0
-region_rect = Rect2(0, 0, 35, 18)
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(0, 0, 26, 26)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_52fyr"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwvr6"]
+atlas = SubResource("CompressedTexture2D_52fyr")
+region = Rect2(107, 107, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_heflq"]
+texture = SubResource("AtlasTexture_qwvr6")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(0, 0, 26, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lxssp"]
 atlas = ExtResource("1_45njn")
@@ -188,6 +203,8 @@ DayAndNightCounterPanel/styles/panel = SubResource("StyleBoxTexture_vhain")
 DayAndNightLabel/base_type = &"Label"
 DayAndNightLabel/font_sizes/font_size = 18
 DayAndNightLabel/fonts/font = ExtResource("2_slsy2")
+EmotePanel/base_type = &"PanelContainer"
+EmotePanel/styles/panel = SubResource("StyleBoxTexture_heflq")
 InventoryItemPanel/base_type = &"PanelContainer"
 InventoryItemPanel/styles/panel = SubResource("StyleBoxTexture_ci2w2")
 InventoryLabel/base_type = &"Label"

@@ -1,0 +1,10 @@
+~ start
+...: Halo anak muda, nampaknya kamu pendatang baru disini.
+...: Selamat datang di Kerajaan Tantalia.
+...: Sayangnya tidak ada waktu untuk merayakan kedatanganmu.
+...: Raja Daendelos sedang menunggu bayaran upeti darimu di akhir minggu ini.
+...: Segera tanam beberapa tanaman dan pelihara ternakmu dengan baik.
+...: Ambil beberapa benih ini.
+Nenek Myra: Oh ya, namaku Myra. Senang bertemu denganmu.
+do GameDialogueManager.action_give_crop_seeds()
+=> END
