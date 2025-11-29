@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Greeds Garden"
+run/main_scene="uid://cpfbmp7bgadlc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -54,6 +55,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 folder_colors={
 "res://Tilesets/": "purple",
+"res://addons/": "pink",
 "res://assets/": "orange",
 "res://dialogue/": "blue",
 "res://resources/": "teal",
