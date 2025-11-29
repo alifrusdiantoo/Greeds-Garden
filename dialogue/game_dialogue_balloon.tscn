@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://dpmu44vrvmmln"]
+[gd_scene load_steps=10 format=3 uid="uid://dpmu44vrvmmln"]
 
 [ext_resource type="Script" uid="uid://6wul744s84ej" path="res://dialogue/game_dialogue_balloon.gd" id="1_sjhsj"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_cindb"]
 [ext_resource type="Theme" uid="uid://huvu6hwyxidw" path="res://dialogue/dialogue_balloon_theme.tres" id="2_xkmgq"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_aimjp"]
 [ext_resource type="PackedScene" uid="uid://c86erxjbd8oe3" path="res://scenes/ui/emotes_panel.tscn" id="3_vwqec"]
+[ext_resource type="FontVariation" uid="uid://bwcud0xx4iavt" path="res://assets/ui/fonts/zx_palm_variation.tres" id="6_071sy"]
 
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 0.001
@@ -146,6 +147,8 @@ response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("6_071sy")
+theme_override_font_sizes/font_size = 16
 text = "Response example"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

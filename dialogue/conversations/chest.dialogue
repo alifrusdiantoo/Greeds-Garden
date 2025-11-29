@@ -1,4 +1,19 @@
 ~ start_cow_pasture_box
 
+Apakah kamu mau memberi makan sapi?
+- Iya
+	[[Sapi kamu sangat senang dengan makanannya.|Mooo~~]]
+	do GameDialogueManager.action_feed_animals()
+- Tidak
+
+=> END
+
+~ start_chicken_pasture_box
+
+Apakah kamu mau memberi makan ayam?
+- Iya
+	[[Ayam kamu sangat senang dengan makanannya.| Tok Petok!!]]
+	do GameDialogueManager.action_feed_animals()
+- Tidak
 
 => END
