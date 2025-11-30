@@ -23,10 +23,14 @@ func on_interactable_deactivated() -> void:
 	in_range = false
 
 func _unhandled_input(event: InputEvent) -> void:
-	if in_range:
-		if event.is_action_pressed("interact"):
-			var balloon: BaseGameDialogueBalloon = balloon_scene.instantiate()
-			get_tree().current_scene.add_child(balloon)
+	if in_range and event.is_action_pressed("interact"):
+		var balloon: BaseGameDialogueBalloon = balloon_scene.instantiate()
+		get_tree().current_scene.add_child(balloon)
+
+		var tools_panel = get_tree().current_scene.get_node("GameScreen/MarginContainer/ToolsPanel")
+		if tools_panel.is_tool_enabled(DataTypes.Tools.TillGround):
+			balloon.start(load("res://dialogue/conversations/guide.dialogue"), "continue")
+		else:
 			balloon.start(load("res://dialogue/conversations/guide.dialogue"), "start")
 
 func on_give_crop_seeds() -> void:
@@ -34,4 +38,3 @@ func on_give_crop_seeds() -> void:
 	ToolManager.enable_tool_button(DataTypes.Tools.WaterCrops)
 	ToolManager.enable_tool_button(DataTypes.Tools.PlantCorn)
 	ToolManager.enable_tool_button(DataTypes.Tools.PlantTomato)
-	

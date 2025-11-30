@@ -8,3 +8,16 @@
 Nenek Myra: Oh ya, namaku Myra. Senang bertemu denganmu.
 do GameDialogueManager.action_give_crop_seeds()
 => END
+
+~ continue
+Nenek Myra: Ada apa?
+- Upeti
+	Nenek Myra: Raja meminta upeti kepada rakyatnya tiap minggu sekali.
+	Nenek Myra: Pengawalnya akan datang menagih di akhir pekan.
+	Nenek Myra: Jangan sampai membuat raja marah dengan tunggakanmu.
+- Bayaran Upeti
+	Nenek Myra: Kamu dapat melihat informasi hasil tanam apa yang harus dibayar minggu ini pada peti di samping rumahmu.
+	Nenek Myra: Kumpulkan bayaran upetimu di sana.
+- Bicara
+	Nenek Myra: [[Tanah yang kau garap hari ini akan menentukan masa depanmu. Perlakukan dengan sabar.|Raja mungkin berkuasa atas tubuhmu, tapi bukan atas hatimu.|Angin pagi hari ini terasa aneh, seolah membawa pesan dari masa lalu.]]
+=> END

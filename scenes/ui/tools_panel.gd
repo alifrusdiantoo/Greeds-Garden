@@ -58,3 +58,16 @@ func on_enable_tool_button(tool: DataTypes.Tools) -> void:
 	elif tool == DataTypes.Tools.PlantTomato:
 		tool_tomato.disabled = false
 		tool_tomato.focus_mode = Control.FOCUS_ALL
+
+func is_tool_enabled(tool: DataTypes.Tools) -> bool:
+	match tool:
+		DataTypes.Tools.TillGround:
+			return not tool_tilling.disabled
+		DataTypes.Tools.WaterCrops:
+			return not tool_watering_can.disabled
+		DataTypes.Tools.PlantCorn:
+			return not tool_corn.disabled
+		DataTypes.Tools.PlantTomato:
+			return not tool_tomato.disabled
+		_:
+			return false

@@ -4,23 +4,17 @@
 [ext_resource type="Script" uid="uid://dqfdj1h203q0i" path="res://scenes/characters/guide/guide.gd" id="1_yvxhl"]
 [ext_resource type="PackedScene" uid="uid://wnrc65seubqj" path="res://scenes/components/interactable_component.tscn" id="2_yvxhl"]
 [ext_resource type="PackedScene" uid="uid://d4fgkcq0klsnh" path="res://scenes/components/interactable_label_component.tscn" id="3_pdv8u"]
+[ext_resource type="PackedScene" uid="uid://dkl2bq7jfcwgb" path="res://scenes/components/test_scene_enable_tool_buttons_component.tscn" id="5_pdv8u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yvxhl"]
 atlas = ExtResource("1_g6y3g")
 region = Rect2(0, 96, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pdv8u"]
-atlas = ExtResource("1_g6y3g")
-region = Rect2(48, 96, 48, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d7sry"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yvxhl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pdv8u")
 }],
 "loop": true,
 "name": &"idle",
@@ -38,7 +32,7 @@ position = Vector2(0, -7)
 sprite_frames = SubResource("SpriteFrames_d7sry")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.947112
+frame_progress = 0.919282
 
 [node name="InteractableComponent" parent="." instance=ExtResource("2_yvxhl")]
 position = Vector2(0, -8)
@@ -52,3 +46,5 @@ offset_top = -30.0
 offset_right = 12.0
 offset_bottom = -12.0
 scale = Vector2(0.6, 0.6)
+
+[node name="TestSceneEnableToolButtonsComponent" parent="." instance=ExtResource("5_pdv8u")]
