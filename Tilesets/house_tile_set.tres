@@ -1,8 +1,10 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://dkhix76buyk3f"]
+[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://dkhix76buyk3f"]
 
 [ext_resource type="Texture2D" uid="uid://8jfkninymnw6" path="res://assets/game/tilesets/wooden_house_wall.png" id="1_juxxr"]
 [ext_resource type="Texture2D" uid="uid://xtkc7wapdvuj" path="res://assets/game/objects/basic_furniture.png" id="2_s4u7f"]
 [ext_resource type="PackedScene" uid="uid://dq13jyiasp7on" path="res://scenes/houses/door.tscn" id="3_s4u7f"]
+[ext_resource type="Texture2D" uid="uid://djcmi6bwrarr4" path="res://assets/game/tilesets/wooden_house_roof1.png" id="4_06qnv"]
+[ext_resource type="Texture2D" uid="uid://gxinww468a7j" path="res://assets/game/tilesets/exterior.png" id="5_bo5jy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tasb"]
 texture = ExtResource("1_juxxr")
@@ -99,8 +101,121 @@ texture = ExtResource("2_s4u7f")
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_7tasb"]
 scenes/1/scene = ExtResource("3_s4u7f")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fd7hp"]
+texture = ExtResource("4_06qnv")
+1:3/0 = 0
+1:4/0 = 0
+1:5/0 = 0
+1:6/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+2:6/0 = 0
+2:5/0 = 0
+2:3/0 = 0
+0:6/0 = 0
+4:5/0 = 0
+4:6/0 = 0
+2:4/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+3:4/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+2:2/0 = 0
+1:2/0 = 0
+0:2/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nt17a"]
+texture = ExtResource("5_bo5jy")
+0:0/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+1:6/0 = 0
+0:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+8:6/0 = 0
+8:5/0 = 0
+8:4/0 = 0
+8:3/0 = 0
+8:2/0 = 0
+8:1/0 = 0
+8:0/0 = 0
+7:0/0 = 0
+7:1/0 = 0
+7:2/0 = 0
+6:3/0 = 0
+5:5/0 = 0
+4:5/0 = 0
+3:5/0 = 0
+3:4/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+2:3/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+4:1/0 = 0
+3:1/0 = 0
+6:1/0 = 0
+6:2/0 = 0
+5:3/0 = 0
+5:2/0 = 0
+4:2/0 = 0
+5:1/0 = 0
+2:5/0 = 0
+6:4/0 = 0
+7:3/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+7:6/0 = 0
+6:6/0 = 0
+6:5/0 = 0
+5:6/0 = 0
+4:6/0 = 0
+3:6/0 = 0
+2:6/0 = 0
+
 [resource]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7tasb")
 sources/1 = SubResource("TileSetAtlasSource_06qnv")
 sources/2 = SubResource("TileSetScenesCollectionSource_7tasb")
+sources/5 = SubResource("TileSetAtlasSource_fd7hp")
+sources/6 = SubResource("TileSetAtlasSource_nt17a")

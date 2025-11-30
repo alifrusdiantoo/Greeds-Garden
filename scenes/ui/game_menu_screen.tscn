@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5yanxl7yun2g"]
+
+[ext_resource type="Theme" uid="uid://yol06ecjaphm" path="res://scenes/ui/game_ui_themes.tres" id="1_5slcd"]
+[ext_resource type="PackedScene" uid="uid://cu1icw8pi6qk" path="res://scenes/ui/game_menu_screen_background.tscn" id="1_arotu"]
+[ext_resource type="Script" uid="uid://d2wg4fuhwgmuc" path="res://scenes/ui/game_menu_screen.gd" id="1_l5nq4"]
+[ext_resource type="PackedScene" uid="uid://b4buybee3ujn8" path="res://scenes/components/mouse_cursor_component.tscn" id="2_jk4o3"]
+
+[node name="GameMenuScreen" type="CanvasLayer"]
+script = ExtResource("1_l5nq4")
+
+[node name="MouseCursorComponent" parent="." instance=ExtResource("2_jk4o3")]
+
+[node name="GameMenuScreenBackground" parent="." instance=ExtResource("1_arotu")]
+position = Vector2(0, -1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_left = -1.0
+offset_top = -27.0
+offset_right = 640.0
+offset_bottom = 360.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("1_5slcd")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.458824, 0.298039, 0.376471, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 40
+text = "Greed'S Garden
+"
+
+[node name="StarGameButton" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_type_variation = &"GameMenuButton"
+text = "START"
+
+[node name="SaveGameButton" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_type_variation = &"GameMenuButton"
+text = "SAVE"
+
+[node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_type_variation = &"GameMenuButton"
+text = "EXIT"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(322, 151)
+zoom = Vector2(1.2, 1.2)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/StarGameButton" to="." method="_on_star_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/SaveGameButton" to="." method="_on_save_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ExitGameButton" to="." method="_on_exit_game_button_pressed"]

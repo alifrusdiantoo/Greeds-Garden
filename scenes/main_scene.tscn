@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://cpfbmp7bgadlc"]
+[gd_scene load_steps=6 format=3 uid="uid://cpfbmp7bgadlc"]
 
+[ext_resource type="PackedScene" uid="uid://b4buybee3ujn8" path="res://scenes/components/mouse_cursor_component.tscn" id="1_gubc5"]
 [ext_resource type="PackedScene" uid="uid://dyjpmckt8t6tx" path="res://scenes/components/day_night_cycle_component.tscn" id="1_pw63i"]
 [ext_resource type="PackedScene" uid="uid://bl74wqgv3sf74" path="res://scenes/ui/game_screen.tscn" id="2_7ykc4"]
 [ext_resource type="PackedScene" uid="uid://cobtm2tcr0ctu" path="res://scenes/levels/level_1.tscn" id="2_pu3yx"]
 [ext_resource type="PackedScene" uid="uid://can5ws48thig7" path="res://scenes/characters/player/player.tscn" id="3_pu3yx"]
 
 [node name="MainScene" type="Node"]
+
+[node name="MouseCursorComponent" parent="." instance=ExtResource("1_gubc5")]
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("1_pw63i")]
 
