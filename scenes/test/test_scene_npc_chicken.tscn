@@ -37,6 +37,7 @@ tile_set = ExtResource("1_ardmt")
 [node name="Player" parent="." instance=ExtResource("2_6nbhr")]
 y_sort_enabled = true
 position = Vector2(162, 161)
+current_tool = 1
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
