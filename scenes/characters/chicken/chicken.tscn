@@ -1,10 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://cscxhybkn60hd"]
+[gd_scene load_steps=16 format=3 uid="uid://cscxhybkn60hd"]
 
 [ext_resource type="Texture2D" uid="uid://dwdqtcoh16s7b" path="res://assets/game/characters/chicken_sprites.png" id="1_be5x3"]
-[ext_resource type="Script" uid="uid://cuic6h8yjf4rg" path="res://scenes/characters/chicken/chicken.gd" id="1_r6a33"]
+[ext_resource type="Script" uid="uid://cuic6h8yjf4rg" path="res://scenes/characters/chicken/chicken.gd" id="1_hv82h"]
 [ext_resource type="Script" uid="uid://cqh185el2r7dm" path="res://scripts/state_machine/node_state_machine.gd" id="2_awcwn"]
 [ext_resource type="Script" uid="uid://c85flksy8xlol" path="res://scenes/characters/npc_states/idle_state.gd" id="3_31inw"]
 [ext_resource type="Script" uid="uid://dqm3hu0y6euhh" path="res://scenes/characters/npc_states/walk_state.gd" id="4_31inw"]
+[ext_resource type="PackedScene" uid="uid://bwpxweqm83bbn" path="res://audio/sfx/chicken_cluck_multiple_sfx.tscn" id="6_wh5lc"]
+[ext_resource type="PackedScene" uid="uid://c2bem0uh8o6pq" path="res://scenes/components/audio_play_time_component.tscn" id="7_vmevo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rsly8"]
 atlas = ExtResource("1_be5x3")
@@ -67,7 +69,7 @@ radius = 4.0
 [node name="Chicken" type="CharacterBody2D"]
 y_sort_enabled = true
 collision_layer = 64
-script = ExtResource("1_r6a33")
+script = ExtResource("1_hv82h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -6)
@@ -101,3 +103,11 @@ script = ExtResource("4_31inw")
 character = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 navigation_agent_2d = NodePath("../../NavigationAgent2D")
+
+[node name="ChickenCluckMultipleSFX" parent="." instance=ExtResource("6_wh5lc")]
+max_distance = 300.0
+
+[node name="AudioPlayTimeComponent" parent="." node_paths=PackedStringArray("audio_stream_player_2d") instance=ExtResource("7_vmevo")]
+wait_time = 6.0
+autostart = true
+audio_stream_player_2d = NodePath("../ChickenCluckMultipleSFX")

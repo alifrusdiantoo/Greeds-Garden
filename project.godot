@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Greeds Garden"
-run/main_scene="uid://cpfbmp7bgadlc"
+run/main_scene="uid://c5yanxl7yun2g"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://r176arlrp8mr"
 
 [autoload]
 
@@ -59,6 +63,7 @@ folder_colors={
 "res://Tilesets/": "purple",
 "res://addons/": "pink",
 "res://assets/": "orange",
+"res://audio/": "red",
 "res://dialogue/": "blue",
 "res://resources/": "teal",
 "res://scenes/": "green",

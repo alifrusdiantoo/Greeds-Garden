@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5sks63yvhp03"]
+
+[ext_resource type="AudioStream" uid="uid://elv3ym556l6o" path="res://assets/audio/bgm/bgm.ogg" id="1_pihmo"]
+
+[node name="OnTheFarmMusic" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_pihmo")
+autoplay = true
+bus = &"BGM"
