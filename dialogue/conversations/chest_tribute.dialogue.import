@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dyhdo33bg2amr"
+path="res://.godot/imported/chest_tribute.dialogue-51e0a9bf897dc7d8a5606f27127b2cc4.tres"
+
+[deps]
+
+source_file="res://dialogue/conversations/chest_tribute.dialogue"
+dest_files=["res://.godot/imported/chest_tribute.dialogue-51e0a9bf897dc7d8a5606f27127b2cc4.tres"]
+
+[params]
+
+defaults=true

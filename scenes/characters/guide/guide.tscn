@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://crwd0eik8c5w7"]
+[gd_scene load_steps=8 format=3 uid="uid://crwd0eik8c5w7"]
 
 [ext_resource type="Texture2D" uid="uid://byiotcp643s32" path="res://assets/game/characters/elder_myra.png" id="1_g6y3g"]
 [ext_resource type="Script" uid="uid://dqfdj1h203q0i" path="res://scenes/characters/guide/guide.gd" id="1_yvxhl"]
 [ext_resource type="PackedScene" uid="uid://wnrc65seubqj" path="res://scenes/components/interactable_component.tscn" id="2_yvxhl"]
 [ext_resource type="PackedScene" uid="uid://d4fgkcq0klsnh" path="res://scenes/components/interactable_label_component.tscn" id="3_pdv8u"]
-[ext_resource type="PackedScene" uid="uid://dkl2bq7jfcwgb" path="res://scenes/components/test_scene_enable_tool_buttons_component.tscn" id="5_pdv8u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yvxhl"]
 atlas = ExtResource("1_g6y3g")
@@ -46,5 +45,3 @@ offset_top = -30.0
 offset_right = 12.0
 offset_bottom = -12.0
 scale = Vector2(0.6, 0.6)
-
-[node name="TestSceneEnableToolButtonsComponent" parent="." instance=ExtResource("5_pdv8u")]

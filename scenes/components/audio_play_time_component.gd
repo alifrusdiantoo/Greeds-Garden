@@ -8,4 +8,3 @@ func _ready() -> void:
 
 func _on_timeout() -> void:
 	audio_stream_player_2d.play()
-	print("SFX played")

@@ -19,5 +19,7 @@ Nenek Myra: Ada apa?
 	Nenek Myra: Kamu dapat melihat informasi hasil tanam apa yang harus dibayar minggu ini pada peti di samping rumahmu.
 	Nenek Myra: Kumpulkan bayaran upetimu di sana.
 - Bicara
-	Nenek Myra: [[Tanah yang kau garap hari ini akan menentukan masa depanmu. Perlakukan dengan sabar.|Raja mungkin berkuasa atas tubuhmu, tapi bukan atas hatimu.|Angin pagi hari ini terasa aneh, seolah membawa pesan dari masa lalu.]]
+	% Nenek Myra: Tanah yang kau garap hari ini akan menentukan masa depanmu. Perlakukan dengan sabar.
+	% Nenek Myra: Raja mungkin berkuasa atas tubuhmu, tapi bukan atas hatimu.
+	% Nenek Myra: Angin pagi hari ini terasa aneh, seolah membawa pesan dari masa lalu.
 => END

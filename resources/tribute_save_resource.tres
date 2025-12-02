@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://de7vob8fay1hn"]
+
+[ext_resource type="Script" uid="uid://dd361dggs0pbp" path="res://resources/tribute_save_resource.gd" id="1_r6qum"]
+
+[resource]
+script = ExtResource("1_r6qum")

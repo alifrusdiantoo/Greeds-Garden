@@ -1,0 +1,25 @@
+~ start_tribute_box
+
+Apa yang ingin kamu lakukan dengan peti upeti?
+- Lihat upeti => show_tribute_status
+- Setor hasil => pay_tribute
+- Keluar
+    do TributeManager.clear_current_tribute()
+
+=> END
+
+~ show_tribute_status
+
+do TributeManager.update_current_status_text()
+{{TributeManager.current_status_text}}
+=> start_tribute_box
+
+=> END
+
+~ pay_tribute
+
+do TributeManager.attempt_pay_current_and_update()
+{{TributeManager.current_status_text}}
+=> start_tribute_box
+
+=> END

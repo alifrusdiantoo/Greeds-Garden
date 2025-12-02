@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dals4yt5b3312"]
+
+[ext_resource type="Script" uid="uid://dvebx3x334l1y" path="res://resources/tribute_node_data_resource.gd" id="1_h8usd"]
+
+[resource]
+script = ExtResource("1_h8usd")
+tributes = {}
+saved_node_name = ""
+global_position = Vector2(0, 0)
+node_path = NodePath("")
+parent_node_path = NodePath("")

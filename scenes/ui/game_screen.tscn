@@ -15,7 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_e2vrk")
 
-[node name="ToolsPanel" parent="MarginContainer" instance=ExtResource("2_gusqm")]
+[node name="ToolsPanel" parent="MarginContainer" groups=["ToolsPanel"] instance=ExtResource("2_gusqm")]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8

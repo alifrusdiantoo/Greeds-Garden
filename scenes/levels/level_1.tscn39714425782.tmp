@@ -5,10 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://d11xvgg0l3s2u" path="res://scenes/components/save_level_data_component.tscn" id="1_wtwp4"]
 [ext_resource type="PackedScene" uid="uid://c73kj6ddmc7o" path="res://scenes/houses/house.tscn" id="2_6iamk"]
 [ext_resource type="PackedScene" uid="uid://crwd0eik8c5w7" path="res://scenes/characters/guide/guide.tscn" id="3_6761a"]
-[ext_resource type="Resource" uid="uid://c86xx5nidq60u" path="res://resources/inventory_node_data_resource.tres" id="3_gmpev"]
+[ext_resource type="Resource" uid="uid://de7vob8fay1hn" path="res://resources/tribute_save_resource.tres" id="3_bahl2"]
 [ext_resource type="PackedScene" uid="uid://cfpfawho21rt" path="res://scenes/components/save_data_component.tscn" id="3_iwr0g"]
-[ext_resource type="Resource" uid="uid://dals4yt5b3312" path="res://resources/tribute_node_data_resource.tres" id="3_np2pn"]
 [ext_resource type="PackedScene" uid="uid://cscxhybkn60hd" path="res://scenes/characters/chicken/chicken.tscn" id="3_nsrm0"]
+[ext_resource type="Resource" uid="uid://thppr2d5si6b" path="res://resources/tilemap_layer_data_resource.tres" id="4_bahl2"]
 [ext_resource type="PackedScene" uid="uid://bo7x40dy4iatx" path="res://scenes/components/field_cursor_component.tscn" id="4_dga24"]
 [ext_resource type="PackedScene" uid="uid://bd8eylpqnhf5a" path="res://scenes/characters/cow/cow.tscn" id="4_x42e6"]
 [ext_resource type="Script" uid="uid://dwv3j56twi4h" path="res://scenes/components/field_cursor_component.gd" id="5_qxy0u"]
@@ -37,8 +37,7 @@ y_sort_enabled = true
 [node name="OnTheFarmMusic" parent="." instance=ExtResource("1_iwr0g")]
 
 [node name="SaveDataComponent" parent="." instance=ExtResource("3_iwr0g")]
-inventory_resource = ExtResource("3_gmpev")
-tribute_resource = ExtResource("3_np2pn")
+save_data_resource = ExtResource("3_bahl2")
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("1_wtwp4")]
 
@@ -62,6 +61,7 @@ tile_set = ExtResource("1_ksju7")
 tile_set = ExtResource("1_ksju7")
 
 [node name="SaveDataComponent" parent="GameTilemap/TilledSoil" instance=ExtResource("3_iwr0g")]
+save_data_resource = ExtResource("4_bahl2")
 
 [node name="TilledGrass" type="TileMapLayer" parent="GameTilemap"]
 tile_map_data = PackedByteArray("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")
@@ -130,12 +130,6 @@ position = Vector2(115, 357)
 [node name="Cow2" parent="Cows" instance=ExtResource("4_x42e6")]
 position = Vector2(147, 330)
 
-[node name="TributeChest" parent="." instance=ExtResource("18_np2pn")]
-position = Vector2(214, 95)
-tribute_items = ["corn", "tomato", "milk", "egg"]
-tribute_targets = [20, 12, 5, 24]
-tribute_id = "village_tribute_01"
-
 [node name="CowPastureBox" parent="." instance=ExtResource("10_qxy0u")]
 position = Vector2(183, 294)
 dialogue_start_command = "start_cow_pasture_box"
@@ -145,3 +139,6 @@ output_reward_scenes = Array[PackedScene]([ExtResource("11_iav0o")])
 position = Vector2(90, 182)
 dialogue_start_command = "start_chicken_pasture_box"
 output_reward_scenes = Array[PackedScene]([ExtResource("12_dnkej")])
+
+[node name="TributeChest" parent="." instance=ExtResource("18_np2pn")]
+position = Vector2(210, 96)
