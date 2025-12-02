@@ -1,0 +1,29 @@
+~ completed
+
+Pengawal Kerajaan: Hm, hasilmu lumayan minggu ini. Raja pasti senang
+Pengawal Kerajaan: Jangan berpuas diri. Raja menginginkan lebih setiap kali.
+Pengawal Kerajaan: Teruslah bekerja. Kau tak ingin membuatnya kecewa.
+
+=> END
+
+~ first_warning
+
+Pengawal Kerajaan: Bayaranmu kurang. Apa yang terjadi di sini?
+Pengawal Kerajaan: Pastikan minggu depan karung ini penuh
+
+=> END
+
+~ second_warning
+
+Pengawal Kerajaan: Lagi-lagi kau gagal memenuhi kewajibanmu
+Pengawal Kerajaan: Raja tidak akan suka dengan ini
+
+
+=> END
+
+~ execution
+
+Raja Daendelos: Damai tidak ada dalam kerajaan yang besar. Hanya kepatuhan dan ketakutan.
+Raja Daendelos: Dan kau sepertinya tidak setuju dengan itu
+
+=> END

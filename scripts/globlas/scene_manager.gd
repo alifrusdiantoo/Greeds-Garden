@@ -5,7 +5,7 @@ var main_scene_root_path: String = "/root/MainScene"
 var main_scene_level_root_path : String = "/root/MainScene/GameRoot/LevelRoot"
 
 var level_scene : Dictionary = {
-	"Level1" : "res://scenes/levels/level_1.tscn"
+	"Level1" : "res://scenes/levels/level_1.tscn",
 }
 
 func load_main_scene_container() -> void:
@@ -36,4 +36,3 @@ func load_level(level: String) -> void:
 		await get_tree().process_frame
 				
 		level_root.add_child(level_scene)
-	

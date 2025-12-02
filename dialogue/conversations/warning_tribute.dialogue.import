@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cbi7exo46ymet"
+path="res://.godot/imported/warning_tribute.dialogue-930cd91577d2396aee5dcb0c3e13db4c.tres"
+
+[deps]
+
+source_file="res://dialogue/conversations/warning_tribute.dialogue"
+dest_files=["res://.godot/imported/warning_tribute.dialogue-930cd91577d2396aee5dcb0c3e13db4c.tres"]
+
+[params]
+
+defaults=true
