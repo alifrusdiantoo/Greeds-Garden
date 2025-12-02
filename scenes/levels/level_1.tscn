@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://cobtm2tcr0ctu"]
+[gd_scene load_steps=24 format=4 uid="uid://cobtm2tcr0ctu"]
 
 [ext_resource type="PackedScene" uid="uid://b5sks63yvhp03" path="res://audio/bgm/on_the_farm_music.tscn" id="1_iwr0g"]
 [ext_resource type="TileSet" uid="uid://3gkb7v1wml2q" path="res://Tilesets/game_tile_set.tres" id="1_ksju7"]
@@ -11,9 +11,12 @@
 [ext_resource type="PackedScene" uid="uid://cscxhybkn60hd" path="res://scenes/characters/chicken/chicken.tscn" id="3_nsrm0"]
 [ext_resource type="PackedScene" uid="uid://bo7x40dy4iatx" path="res://scenes/components/field_cursor_component.tscn" id="4_dga24"]
 [ext_resource type="PackedScene" uid="uid://bd8eylpqnhf5a" path="res://scenes/characters/cow/cow.tscn" id="4_x42e6"]
+[ext_resource type="Resource" uid="uid://di85aq2ln6pp2" path="res://resources/scene_data_resource.tres" id="5_mkypq"]
 [ext_resource type="Script" uid="uid://dwv3j56twi4h" path="res://scenes/components/field_cursor_component.gd" id="5_qxy0u"]
 [ext_resource type="PackedScene" uid="uid://c1rtnemo65e7n" path="res://scenes/components/crops_cursor_component.tscn" id="6_excbq"]
+[ext_resource type="PackedScene" uid="uid://dkl2bq7jfcwgb" path="res://scenes/components/test_scene_enable_tool_buttons_component.tscn" id="7_gmpev"]
 [ext_resource type="Script" uid="uid://nfpdccuumecx" path="res://scenes/components/crops_cursor_component.gd" id="7_iav0o"]
+[ext_resource type="Resource" uid="uid://thppr2d5si6b" path="res://resources/tilemap_layer_data_resource.tres" id="9_ndtll"]
 [ext_resource type="PackedScene" uid="uid://dxthvk1huwdi3" path="res://scenes/objects/chest/chest.tscn" id="10_qxy0u"]
 [ext_resource type="PackedScene" uid="uid://d4b6ljrxft2k0" path="res://scenes/objects/milk.tscn" id="11_iav0o"]
 [ext_resource type="PackedScene" uid="uid://rmy7dck5kaa2" path="res://scenes/objects/egg.tscn" id="12_dnkej"]
@@ -39,8 +42,11 @@ y_sort_enabled = true
 [node name="SaveDataComponent" parent="." instance=ExtResource("3_iwr0g")]
 inventory_resource = ExtResource("3_gmpev")
 tribute_resource = ExtResource("3_np2pn")
+other_resources = Array[Resource]([ExtResource("5_mkypq")])
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("1_wtwp4")]
+
+[node name="TestSceneEnableToolButtonsComponent" parent="." instance=ExtResource("7_gmpev")]
 
 [node name="GameTilemap" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -62,6 +68,7 @@ tile_set = ExtResource("1_ksju7")
 tile_set = ExtResource("1_ksju7")
 
 [node name="SaveDataComponent" parent="GameTilemap/TilledSoil" instance=ExtResource("3_iwr0g")]
+other_resources = Array[Resource]([ExtResource("9_ndtll")])
 
 [node name="TilledGrass" type="TileMapLayer" parent="GameTilemap"]
 tile_map_data = PackedByteArray("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")
@@ -87,6 +94,8 @@ tile_set = ExtResource("1_ksju7")
 position = Vector2(246, 123)
 
 [node name="CropFields" type="Node2D" parent="."]
+
+[node name="SaveDataComponent" parent="CropFields" instance=ExtResource("3_iwr0g")]
 
 [node name="FieldCursorComponent" parent="." node_paths=PackedStringArray("grass_tilemap_layer", "tilled_soil_tilemap_layer") instance=ExtResource("4_dga24")]
 script = ExtResource("5_qxy0u")

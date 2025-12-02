@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PlantNodeDataResource" load_steps=2 format=3 uid="uid://g2ulxoglwx2x"]
+
+[ext_resource type="Script" uid="uid://e18fwqrbs7ot" path="res://resources/plant_node_data_resource.gd" id="1_adc45"]
+
+[resource]
+script = ExtResource("1_adc45")
+scene_file_path = ""
+plant_type = ""
+growth_stage = 0
+growth_progress = 0.0
+planted_time = 0.0
+is_harvestable = false
+saved_node_name = ""
+global_position = Vector2(0, 0)
+node_path = NodePath("")
+parent_node_path = NodePath("")
